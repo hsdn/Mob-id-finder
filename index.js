@@ -1,6 +1,6 @@
 //Defaults
-let sysmsg=false, //display system messages for ids (Default false)  
-	enabled=true //default enable/disable module
+let sysmsg=true, //display system messages for ids (Default false)  
+	enabled=false //default enable/disable module
 
 module.exports = function mobidfinder(dispatch) {
 	
@@ -17,7 +17,7 @@ module.exports = function mobidfinder(dispatch) {
 			dispatch.command.message(`Mob ID sysmsg ${sysmsg ? 'enabled' :'disabled'}`)
 	})
 	
-	dispatch.hook('S_SPAWN_NPC', 10, event => {
+	dispatch.hook('S_SPAWN_NPC', 11, event => {
 		if(enabled) idlist.set(event.gameId,`${event.huntingZoneId}_${event.templateId}`);
 	})
 	
