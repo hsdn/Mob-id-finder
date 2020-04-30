@@ -1,5 +1,12 @@
 {
-    "disableAutoUpdate": false,
-    "name": "Mob-id-finder",
-    "description": "Description goes here."
+    "name": "Mob ID finder",
+    "author": "HSDN / SerenTera",
+    "description": "Easy way to find a mob's huntingZoneId and templateId by killing the mob",
+    "options": {
+        "niceName": "Mob ID finder"
+    },
+    "supportUrl": "https://github.com/hsdn/Mob-id-finder/issues",
+    "servers": ["https://raw.githubusercontent.com/hsdn/Mob-id-finder/master/"],
+    "version": "92.03",
+    "disableAutoUpdate": false
 }
